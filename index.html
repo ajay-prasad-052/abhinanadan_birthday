@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birthday Wishes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="celebration" id="celebration">
+    <div class="sky-glow sky-glow-one"></div>
+    <div class="sky-glow sky-glow-two"></div>
+    <div class="confetti" aria-hidden="true"></div>
+
+    <button class="music-button" id="musicButton" type="button" aria-label="Play birthday music">
+      <span class="music-icon">♫</span>
+      <span id="musicLabel">Play music</span>
+    </button>
+    <input class="audio-input" id="audioInput" type="file" accept="audio/*" />
+
+    <section class="hero" aria-labelledby="birthdayTitle">
+      <p class="eyebrow">A little celebration for</p>
+      <h1 id="birthdayTitle"><span>Happy Birthday,</span> Abhinandan!</h1>
+      <p class="wish">May your day be full of bright moments,<br />big laughs, and everything you love.</p>
+      <button class="surprise-button" id="surpriseButton" type="button">
+        <span>Make a wish</span>
+        <span class="sparkle">✦</span>
+      </button>
+    </section>
+
+    <div class="balloon balloon-coral" aria-hidden="true"><span></span></div>
+    <div class="balloon balloon-yellow" aria-hidden="true"><span></span></div>
+    <div class="balloon balloon-blue" aria-hidden="true"><span></span></div>
+    <div class="balloon balloon-pink" aria-hidden="true"><span></span></div>
+
+    <section class="cake-scene" aria-label="Birthday cake">
+      <div class="cake-shadow"></div>
+      <div class="cake">
+        <div class="candle candle-one"><i></i></div>
+        <div class="candle candle-two"><i></i></div>
+        <div class="candle candle-three"><i></i></div>
+        <div class="icing"></div>
+        <div class="cake-body"><span></span><span></span><span></span></div>
+        <div class="cake-plate"></div>
+      </div>
+    </section>
+
+    <footer class="footer-note">
+      <span>Made with love</span>
+      <span class="heart">♥</span>
+      <label for="audioInput">Add your song</label>
+    </footer>
+  </main>
+  <audio id="audioPlayer" loop src="the_mountain-happy-birthday-576570.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
