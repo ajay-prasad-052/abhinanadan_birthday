@@ -3,11 +3,16 @@ const celebration = document.querySelector('#celebration');
 const audioPlayer = document.querySelector('#audioPlayer');
 
 const startMusic = () => {
-  audioPlayer.play().catch(() => {});
+  audioPlayer.play().then(() => {
+    document.removeEventListener('pointerdown', startMusic);
+    document.removeEventListener('touchstart', startMusic);
+    document.removeEventListener('click', startMusic);
+  }).catch(() => {});
 };
 
-document.addEventListener('pointerdown', startMusic, { once: true });
-document.addEventListener('keydown', startMusic, { once: true });
+document.addEventListener('pointerdown', startMusic);
+document.addEventListener('touchstart', startMusic, { passive: true });
+document.addEventListener('click', startMusic);
 
 surpriseButton.addEventListener('click', () => {
   celebration.classList.remove('wished');
