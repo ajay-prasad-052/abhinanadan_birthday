@@ -1,5 +1,13 @@
 const surpriseButton = document.querySelector('#surpriseButton');
 const celebration = document.querySelector('#celebration');
+const audioPlayer = document.querySelector('#audioPlayer');
+
+const startMusic = () => {
+  audioPlayer.play().catch(() => {});
+};
+
+document.addEventListener('pointerdown', startMusic, { once: true });
+document.addEventListener('keydown', startMusic, { once: true });
 
 surpriseButton.addEventListener('click', () => {
   celebration.classList.remove('wished');
