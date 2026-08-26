@@ -15,15 +15,9 @@
     <div class="sky-glow sky-glow-two"></div>
     <div class="confetti" aria-hidden="true"></div>
 
-    <button class="music-button" id="musicButton" type="button" aria-label="Play birthday music">
-      <span class="music-icon">♫</span>
-      <span id="musicLabel">Play music</span>
-    </button>
-    <input class="audio-input" id="audioInput" type="file" accept="audio/*" />
-
     <section class="hero" aria-labelledby="birthdayTitle">
       <p class="eyebrow">A little celebration for</p>
-      <h1 id="birthdayTitle"><span>Happy Birthday,</span> Abhinandan!</h1>
+      <h1 id="birthdayTitle"><span>Happy Birthday,</span> Yashika!</h1>
       <p class="wish">May your day be full of bright moments,<br />big laughs, and everything you love.</p>
       <button class="surprise-button" id="surpriseButton" type="button">
         <span>Make a wish</span>
@@ -51,10 +45,33 @@
     <footer class="footer-note">
       <span>Made with love</span>
       <span class="heart">♥</span>
-      <label for="audioInput">Add your song</label>
     </footer>
   </main>
-  <audio id="audioPlayer" loop src="the_mountain-happy-birthday-576570.mp3"></audio>
+  <section class="birthday-content" aria-labelledby="birthdayNoteTitle">
+    <div class="content-intro">
+      <p class="eyebrow">A note just for you</p>
+      <h2 id="birthdayNoteTitle">Here’s to your brightest year yet.</h2>
+      <p class="birthday-message">Yashika, may this new chapter bring you gentle mornings, unforgettable adventures, and plenty of reasons to smile. You make ordinary moments feel special, and today is all about celebrating you.</p>
+    </div>
+    <div class="wish-grid" aria-label="Birthday wishes">
+      <article class="wish-card wish-card-coral">
+        <span class="wish-number">01</span>
+        <h3>More little joys</h3>
+        <p>For the songs, snacks, surprises, and people who make your heart feel full.</p>
+      </article>
+      <article class="wish-card wish-card-yellow">
+        <span class="wish-number">02</span>
+        <h3>Big beautiful dreams</h3>
+        <p>May every brave idea find its moment, and every effort lead somewhere wonderful.</p>
+      </article>
+      <article class="wish-card wish-card-blue">
+        <span class="wish-number">03</span>
+        <h3>Endless reasons to dance</h3>
+        <p>Keep your sparkle close and make space for the kind of happiness that sneaks up on you.</p>
+      </article>
+    </div>
+  </section>
+  <audio id="audioPlayer" autoplay loop src="Tu Jo Hain Mr. X 128 Kbps.mp3"></audio>
   <script src="script.js"></script>
 </body>
 </html>
